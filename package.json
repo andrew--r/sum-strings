@@ -7,6 +7,10 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrew--r/sum-strings.git"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.1.2"

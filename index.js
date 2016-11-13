@@ -18,7 +18,7 @@ function sumStrings(string1, string2) {
     return addByChar(longestString, (char, index) => {
         let result = char;
 
-        if (smallestString[index]) {
+        if (reversedSmallestString[index]) {
             result = sumChars(char, reversedSmallestString[index]);
         }
 

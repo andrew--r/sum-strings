@@ -6,7 +6,7 @@ const sumStrings = require('./index');
 describe('addOne', () => {
     it('should add one', () => {
         expect(addOne('1')).to.equal('2');
-        expect(addOne('5')).to.equal('6');
+        expect(addOne('9')).to.equal('10');
         expect(addOne('12')).to.equal('13');
         expect(addOne('79')).to.equal('80');
         expect(addOne('99')).to.equal('100');
@@ -24,7 +24,7 @@ describe('sumChars', () => {
         expect(sumChars('4', '6')).to.equal('10');
         expect(sumChars('8', '4')).to.equal('12');
         expect(sumChars('9', '9')).to.equal('18');
-    })
+    });
 });
 
 describe('sumStrings', () => {

@@ -7,18 +7,18 @@ function addByChar(string, addingFn) {
     const charsCount = array.length;
     let result;
 
-    let delayedAdd = 0;
+    let delayedIncrement = 0;
 
     result = array.reduce((acc, char, index) => {
         let currentChar = char;
 
-        if (delayedAdd) {
+        if (delayedIncrement) {
             currentChar = nextNumber[currentChar];
 
             if (currentChar.length > 1) {
                 currentChar = currentChar.slice(-1);
             } else {
-                delayedAdd--;
+                delayedIncrement--;
             }
         }
 
@@ -26,7 +26,7 @@ function addByChar(string, addingFn) {
 
         if (addResult.length > 1) {
             acc += addResult.slice(-1);
-            delayedAdd++;
+            delayedIncrement++;
         } else {
             acc += addResult;
         }
@@ -34,7 +34,7 @@ function addByChar(string, addingFn) {
         return acc;
     }, '');
 
-    if (delayedAdd) {
+    if (delayedIncrement) {
         result += '1';
     }
 

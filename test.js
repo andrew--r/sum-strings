@@ -1,7 +1,6 @@
 const expect = require('chai').expect;
 const addOne = require('./add-one');
 const subtractOne = require('./subtract-one');
-const sumChars = require('./sum-chars');
 const sumStrings = require('./index');
 
 describe('addOne', () => {
@@ -25,18 +24,6 @@ describe('subtractOne', () => {
 		expect(subtractOne('100')).to.equal('99');
 		expect(subtractOne('256')).to.equal('255');
 		expect(subtractOne('13000')).to.equal('12999');
-	});
-});
-
-describe('sumChars', () => {
-	it('should sum chars', () => {
-		expect(sumChars('1', '1')).to.equal('2');
-		expect(sumChars('1', '9')).to.equal('10');
-		expect(sumChars('2', '6')).to.equal('8');
-		expect(sumChars('4', '3')).to.equal('7');
-		expect(sumChars('4', '6')).to.equal('10');
-		expect(sumChars('8', '4')).to.equal('12');
-		expect(sumChars('9', '9')).to.equal('18');
 	});
 });
 
